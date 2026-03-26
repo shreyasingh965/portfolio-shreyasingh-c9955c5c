@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Github, Linkedin, Mail, Phone, Download } from "lucide-react";
 import { useEffect, useRef } from "react";
 
 const HeroSection = () => {
@@ -123,20 +123,30 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.45 }}
-          className="flex items-center justify-center gap-5"
+          className="flex flex-col items-center gap-6"
         >
-          <a href="mailto:shreya.singh9@outlook.com" className="p-3 rounded-full bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-colors duration-300 hover-scale">
-            <Mail size={20} />
+          <a
+            href="/resume.pdf"
+            download="Shreya_Singh_Resume.pdf"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity hover-scale"
+          >
+            <Download size={18} /> Download Resume
           </a>
-          <a href="tel:6394577969" className="p-3 rounded-full bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-colors duration-300 hover-scale">
-            <Phone size={20} />
-          </a>
-          <a href="https://github.com/shreyasingh965" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-colors duration-300 hover-scale">
-            <Github size={20} />
-          </a>
-          <a href="https://linkedin.com/in/shreya-singh6" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-colors duration-300 hover-scale">
-            <Linkedin size={20} />
-          </a>
+
+          <div className="flex items-center gap-5">
+            <a href="mailto:shreya.singh9@outlook.com" className="p-3 rounded-full bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-colors duration-300 hover-scale">
+              <Mail size={20} />
+            </a>
+            <a href="tel:6394577969" className="p-3 rounded-full bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-colors duration-300 hover-scale">
+              <Phone size={20} />
+            </a>
+            <a href="https://github.com/shreyasingh965" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-colors duration-300 hover-scale">
+              <Github size={20} />
+            </a>
+            <a href="https://linkedin.com/in/shreya-singh6" target="_blank" rel="noreferrer" className="p-3 rounded-full bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground transition-colors duration-300 hover-scale">
+              <Linkedin size={20} />
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>
