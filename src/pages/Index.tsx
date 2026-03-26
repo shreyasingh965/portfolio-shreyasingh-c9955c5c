@@ -14,6 +14,7 @@ const Index = () => {
       <AboutSection />
       <SkillsSection />
       <ProjectsSection />
+      <BlogSection />
       <ContactSection />
       <footer className="py-8 px-6 text-center text-muted-foreground text-sm section-border">
         © 2026 Shreya Singh. All rights reserved.
