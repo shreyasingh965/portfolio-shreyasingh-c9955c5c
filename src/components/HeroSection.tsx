@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, Phone, Download } from "lucide-react";
 import { useEffect, useRef } from "react";
+import useTypingAnimation from "@/hooks/useTypingAnimation";
 
 const HeroSection = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const typedText = useTypingAnimation();
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -110,14 +112,15 @@ const HeroSection = () => {
           <span className="text-gradient">Singh</span>
         </motion.h1>
 
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10"
+          className="text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-10 h-8"
         >
-          Full-stack developer & AI enthusiast building scalable web and AI-powered applications with Python, C++, and modern web technologies.
-        </motion.p>
+          <span className="text-primary font-medium">{typedText}</span>
+          <span className="animate-pulse text-primary">|</span>
+        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
