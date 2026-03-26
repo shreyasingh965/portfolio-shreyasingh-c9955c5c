@@ -5,6 +5,7 @@ import useTypingAnimation from "@/hooks/useTypingAnimation";
 
 const HeroSection = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const typedText = useTypingAnimation();
 
   useEffect(() => {
     const canvas = canvasRef.current;
