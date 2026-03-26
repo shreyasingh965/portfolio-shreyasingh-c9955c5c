@@ -9,7 +9,6 @@ import BlogSection from "@/components/BlogSection";
 const Index = () => {
   return (
     <div className="min-h-screen">
-      
       <Navbar />
       <HeroSection />
       <AboutSection />
