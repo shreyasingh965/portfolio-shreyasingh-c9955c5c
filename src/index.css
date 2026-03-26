@@ -78,6 +78,10 @@
   .glow {
     box-shadow: 0 0 40px -10px hsl(42 90% 55% / 0.15);
   }
+
+  .hover-scale {
+    @apply transition-transform duration-200 hover:scale-110;
+  }
 }
 
 html {
