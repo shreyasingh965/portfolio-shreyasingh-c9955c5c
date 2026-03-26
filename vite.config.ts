@@ -4,9 +4,9 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
-export default defineConfig(({ 
+export default defineConfig(({mode}) => ({
+  
   base: '/portfolio-shreyasingh-c9955c5c/', 
-}) => ({
   server: {
     host: "::",
     port: 8080,
