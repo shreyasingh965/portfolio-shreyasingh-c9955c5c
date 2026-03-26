@@ -129,7 +129,7 @@ const HeroSection = () => {
           className="flex flex-col items-center gap-6"
         >
           <a
-            href="/resume.pdf"
+            href="./resume.pdf"
             download="Shreya_Singh_Resume.pdf"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity hover-scale"
           >
