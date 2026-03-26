@@ -7,9 +7,7 @@ import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
-<a href="./resume.pdf" download>
-  Download Resume
-</a>
+
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
