@@ -4,6 +4,7 @@ import AboutSection from "@/components/AboutSection";
 import SkillsSection from "@/components/SkillsSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection";
+import BlogSection from "@/components/BlogSection";
 
 const Index = () => {
   return (
@@ -13,6 +14,7 @@ const Index = () => {
       <AboutSection />
       <SkillsSection />
       <ProjectsSection />
+      <BlogSection />
       <ContactSection />
       <footer className="py-8 px-6 text-center text-muted-foreground text-sm section-border">
         © 2026 Shreya Singh. All rights reserved.
