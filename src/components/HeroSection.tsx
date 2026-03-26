@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, Phone, Download } from "lucide-react";
 import { useEffect, useRef } from "react";
+import useTypingAnimation from "@/hooks/useTypingAnimation";
 
 const HeroSection = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
