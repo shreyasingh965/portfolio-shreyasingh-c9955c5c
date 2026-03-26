@@ -9,9 +9,7 @@ import BlogSection from "@/components/BlogSection";
 const Index = () => {
   return (
     <div className="min-h-screen">
-      <a href="./resume.pdf" download>
-  Download Resume
-</a>
+      
       <Navbar />
       <HeroSection />
       <AboutSection />
